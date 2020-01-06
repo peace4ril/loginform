@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+             margin: 0px;
+             font-size: 14px;
+             /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
+        }
+        body{
+            background-color: currentColor;
+        }
+        #nav-bar{
+            /* overflow: hidden; */
+            margin-bottom:10px; 
+            /* padding: 0px; */
+            /* list-style: none; */
+            background-color: gray;
+        }
+        #nav-bar a{
+            text-decoration: none;
+            /* text-align: center; */
+            padding: 14px 16px;
+            display: inline-block;
+            color: white;
+        }
+
+        #nav-bar a:hover{
+            background-color: black;
+            border-radius: 3px;
+        }
+        #active{
+            background-color:lightgray;
+        }
+        #house{
+            /* width: 80px;  */
+        }
+        .div1{
+            background-color: aqua;
+            float: left;
+
+        }
+        .div2{
+            background-color: tomato;
+            margin-left: 10px; 
+            display: inline-block;
+            /* height: 130px; */
+        }
+        .border-radius{
+            border-radius: 0 20px 0 20px;
+            padding: 10px;
+        }
+        form{
+            max-width: 400px; 
+            margin: 30px auto 80px auto;
+            display: flex;
+            /* flex-direction: inline; */
+            background-color: white;
+            padding: 75px 125px 75px 75px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="nav-bar">
+        <a href="#password" id="active">Home</a>
+        <a href="#date">Service</a>
+        <a href="#peace">About us</a>
+        <a href="#email">Contact us</a>
+    </div>
+    <form>
+    
+        <div class="div1 border-radius">
+    <fieldset id="house">
+        <legend>Registration Form</legend>
+        <br>
+        <label>Firstname:<a style="color: red; cursor: pointer;">*</a></label>
+        <input type="text">
+        <br><br>
+        <label>Lastname:<a style="color: red; cursor: pointer;">*</a></label>
+        <input type="text">
+        <br><br>
+        <p>Gender:</p>
+        <label>Male</label>
+        <input type="radio">
+        <label>Female</label>
+        <input type="radio">
+        <br><br>
+        <label>Nationality:</label>
+        <select id="value">
+            <option value="Select">Select</option>
+            <option value="Nigerian">Nigerian</option>
+            <option value="Others">Others</option>
+        </select>
+        <br><br>
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="email@gmail.com" required>
+        <br><br>
+        <label>Password:</label>
+        <a name="peace"><input type="password" placeholder="********" required></a>
+        <br><br>
+        <label>Confirm password:</label>
+        <input type="password" name="password" placeholder="*******" required>
+        <br><br>
+        <label>Comment:</label>
+        <textarea cols="20" rows="8"></textarea>
+        <br><br>
+        <label>Date of Birth:</label>
+        <input type="text" name="date" id="date" placeholder="dd/mm/yyy" >
+        <br><br>
+        <input style="cursor: pointer;" type="checkbox">
+        <label>I Agree</label>
+        <a style="text-decoration: none; color: red;" href="#">Privacy Policy</a>
+        <br><br>
+        <input style="cursor: pointer;" type="submit" value="submit"> 
+        <input style="cursor: pointer;" type="reset" value="reset">
+    </fieldset>
+</div>
+    <div class="div2 border-radius">
+    <fieldset id="house">
+        <legend>Login</legend>
+        <input type="text" placeholder="Email" name="email" id="email">
+        <br><br>
+        <input type="password" placeholder="password" name="password" id="password">
+        <br><br>
+        <input style="cursor: pointer;" type="submit" value="login">
+        <input style="cursor: pointer;" type="reset" value="clear">
+    </fieldset>
+    </div>
+</form>
+</body>
+</html>
